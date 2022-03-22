@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-jwt-master.flake = false;
+  inputs.src-jwt-master.ref   = "refs/heads/master";
   inputs.src-jwt-master.owner = "yglukhov";
-  inputs.src-jwt-master.ref   = "master";
   inputs.src-jwt-master.repo  = "nim-jwt.git";
   inputs.src-jwt-master.type  = "github";
   
