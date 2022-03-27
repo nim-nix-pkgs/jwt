@@ -11,6 +11,7 @@
   inputs.src-jwt-master.ref   = "refs/heads/master";
   inputs.src-jwt-master.owner = "yglukhov";
   inputs.src-jwt-master.repo  = "nim-jwt";
+  inputs.src-jwt-master.dir   = "";
   inputs.src-jwt-master.type  = "github";
   
   inputs."bearssl".owner = "nim-nix-pkgs";
