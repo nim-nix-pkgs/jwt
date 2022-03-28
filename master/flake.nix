@@ -11,7 +11,6 @@
   inputs.src-jwt-master.ref   = "refs/heads/master";
   inputs.src-jwt-master.owner = "yglukhov";
   inputs.src-jwt-master.repo  = "nim-jwt";
-  inputs.src-jwt-master.dir   = "";
   inputs.src-jwt-master.type  = "github";
   
   inputs."bearssl".owner = "nim-nix-pkgs";
@@ -21,6 +20,14 @@
   inputs."bearssl".type  = "github";
   inputs."bearssl".inputs.nixpkgs.follows = "nixpkgs";
   inputs."bearssl".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."github.com/yglukhov/bearssl_pkey_decoder".owner = "nim-nix-pkgs";
+  inputs."github.com/yglukhov/bearssl_pkey_decoder".ref   = "master";
+  inputs."github.com/yglukhov/bearssl_pkey_decoder".repo  = "github.com/yglukhov/bearssl_pkey_decoder";
+  inputs."github.com/yglukhov/bearssl_pkey_decoder".dir   = "";
+  inputs."github.com/yglukhov/bearssl_pkey_decoder".type  = "github";
+  inputs."github.com/yglukhov/bearssl_pkey_decoder".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/yglukhov/bearssl_pkey_decoder".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
